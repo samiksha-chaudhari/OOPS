@@ -30,17 +30,17 @@ namespace OOPS
 
                 Console.WriteLine("Enter Price Per Share:-");
                 int PricePerEachShare = Convert.ToInt32(Console.ReadLine());
-
+                Stockvalue(NoOfShares, PricePerEachShare, ShareName);//calling stockvalue()
                 //adding the details in list
                 liststock.Add(new stockData()
-                 {
-                     ShareName = ShareName,
-                     NoOfShares = NoOfShares,
-                     PricePerEachShare = PricePerEachShare,
-                 });
+                {
+                    ShareName = ShareName,
+                    NoOfShares = NoOfShares,
+                    PricePerEachShare = PricePerEachShare,
+                });
 
-                Stockvalue(NoOfShares, PricePerEachShare, ShareName);//calling stockvalue()
             }
+            
         }
 
         public void show() //creating method to view data
