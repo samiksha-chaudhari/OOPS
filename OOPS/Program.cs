@@ -33,9 +33,7 @@ namespace OOPS
                         break;
                     case 3:
                         Stock stock = new Stock();//creating object
-                        Console.WriteLine("Welcome to Stock Account Management!");
-                        Console.WriteLine("\n");
-                        stock.add();//calling add() from stock.cs
+                        stock.option();
                         break;
 
                     default:
