@@ -4,18 +4,11 @@ using System.Text;
 
 namespace OOPS
 {
-    public class stockData  //created class contact
-    {
-        //by using encapsulation
-        public string ShareName { get; set; } //property
-        public int NoOfShares { get; set; }
-        public int PricePerEachShare { get; set; }
-
-    }
+   
     public class Stock
     {
         //list declaration to store the personal details
-        List<stockData> liststock = new List<stockData>();
+        List<StockManagement> liststock = new List<StockManagement>();
         public void add() //creating method to add data
         {                     
             Console.WriteLine("Enter Number Of Stocks:-");
@@ -32,7 +25,7 @@ namespace OOPS
                 int PricePerEachShare = Convert.ToInt32(Console.ReadLine());
                 Stockvalue(NoOfShares, PricePerEachShare, ShareName);//calling stockvalue()
                 //adding the details in list
-                liststock.Add(new stockData()
+                liststock.Add(new StockManagement()
                 {
                     ShareName = ShareName,
                     NoOfShares = NoOfShares,
